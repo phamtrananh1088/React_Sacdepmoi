@@ -1,0 +1,36 @@
+.top bar
+	.nav left
+		.link home page with logo
+		.menu
+	.search form
+		.search category
+		.search content
+	.nav right
+		.account
+		.store
+		.cart
+.next day toggle bar		
+.body
+	.section
+		.multilinkPOVcarousel
+			.slider
+				.slider-frame
+				.slider-decorator
+		.other content (customer connection)
+			.sales off
+			.get free NextDay delivery
+	.section 
+		.advertising
+		.featurecategorycollapsible
+		.featurecategorycollapsible
+		.featurecategorycollapsible
+		.multistoremodule
+	.section
+	.section
+.footer
+	.footer1
+	.footer2
+	.footer3...
+		
+	
+ 

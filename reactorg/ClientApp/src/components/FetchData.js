@@ -31,7 +31,7 @@ export class FetchData extends Component {
                             <td>{p.name}</td>
                             <td>{p.description}</td>
                             <td>{p.price}</td>
-                            <td><img src={p.thumbnail}/></td>
+                            <td><img alt="sacdepmoi.com.vn." src={p.thumbnail}/></td>
                         </tr>
                     )}
                 </tbody>

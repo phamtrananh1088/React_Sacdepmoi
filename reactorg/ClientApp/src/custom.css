@@ -12,3 +12,47 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+@font-face {
+    font-family: NewYorkIcons;
+    src: url("./fonts/6255ed72d86ece856725a2d80878bce6.eot"); font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: NewYorkIcons;
+    src: url("./fonts/fd827841624904d4b8f51d20174fa3a4.woff2") format("woff2"),url("./fonts/5b38b158833d0265af2b1c1093e489bd.woff") format("woff"),url("./fonts/2ebae25dcb1bb39acbac9cffd8f10b15.ttf") format("truetype"); font-weight: 400; font-style: normal
+}
+
+.elc-icon {
+    font-family: NewYorkIcons;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    -mos-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    line-height: normal
+}
+
+    .elc-icon:before {
+        content: "";
+        display: inline;
+        speak: none
+    }
+
+.elc-icon-pause:before {
+    content: "\E97A"
+}
+
+.carousel-paginator-list .elc-icon-pause, .carousel-paginator-list .elc-icon-play {
+    font-size: 16px;
+    font-size: 1rem;
+    position: relative;
+    top: -4px;
+    margin-left: -12px;
+    margin-right: -12px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: #000
+}

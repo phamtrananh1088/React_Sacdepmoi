@@ -19,9 +19,10 @@ export class Home extends Component {
         } else {
             let data = [];
             this.state.products.map(p => {
-                data.push(p.image);
+                data.push(p.image + '=w410-h410-p-k-nu-iv1');
             });
-            carosel_contents = <ComCarousel data={data} />;
+            const tick = 5000;
+            carosel_contents = <ComCarousel data={data} tick={tick} />;
         }
         return (
           <div>

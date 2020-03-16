@@ -56,3 +56,68 @@ code {
     border: none;
     color: #000
 }
+
+table.wfipt {
+    margin-top: 1px;
+    border: none;
+    border-collapse: collapse;
+    width: auto;
+}
+
+    table.wfipt th {
+        border: solid 1px #c0c0c0;
+        padding: 2px 2px 2px 12px;
+        width: 150px;
+        height: 28px;
+        vertical-align: middle;
+        text-align: left;
+        background-color: #df7;
+        color: black;
+        font-weight: normal;
+        background: url(./images/wfthbak.png) repeat-y 0 0;
+    }
+
+    table.wfipt td {
+        height: 33px;
+        background-color: white;
+        border: solid 1px #c0c0c0;
+        padding: 2px;
+        vertical-align: middle;
+    }
+
+input, .textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #d3d6db;
+    border-radius: 2px;
+    color: #222324;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 12px;
+    height: 28px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    line-height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+    vertical-align: top;
+    box-shadow: inset 0 1px 2px rgba(17, 17, 17, 0.1);
+    max-width: 100%;
+    width: 100%;
+}
+
+.input {
+    border-radius: 2px !important;
+    height: 28px !important;
+    box-shadow: none;
+}

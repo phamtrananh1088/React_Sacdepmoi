@@ -1,0 +1,210 @@
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+@font-face {
+    font-family: NewYorkIcons;
+    src: url("./fonts/6255ed72d86ece856725a2d80878bce6.eot"); font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: NewYorkIcons;
+    src: url("./fonts/fd827841624904d4b8f51d20174fa3a4.woff2") format("woff2"),url("./fonts/5b38b158833d0265af2b1c1093e489bd.woff") format("woff"),url("./fonts/2ebae25dcb1bb39acbac9cffd8f10b15.ttf") format("truetype"); font-weight: 400; font-style: normal
+}
+
+.elc-icon {
+    font-family: NewYorkIcons;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    -mos-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    line-height: normal
+}
+
+    .elc-icon:before {
+        content: "";
+        display: inline;
+        speak: none
+    }
+
+.elc-icon-pause:before {
+    content: "\E97A"
+}
+.elc-icon-date:before {
+    content: "\E9BD";
+}
+.carousel-paginator-list .elc-icon-pause, .carousel-paginator-list .elc-icon-play {
+    font-size: 16px;
+    font-size: 1rem;
+    position: relative;
+    top: -4px;
+    margin-left: -12px;
+    margin-right: -12px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: #000
+}
+
+table.wfipt {
+    margin-top: 1px;
+    border: none;
+    border-collapse: collapse;
+    width: auto;
+}
+
+    table.wfipt th {
+        border: solid 1px #c0c0c0;
+        padding: 2px 2px 2px 12px;
+        width: 150px;
+        height: 28px;
+        vertical-align: middle;
+        text-align: left;
+        background-color: #df7;
+        color: black;
+        font-weight: normal;
+        background: url(./images/wfthbak.png) repeat-y 0 0;
+    }
+
+    table.wfipt td {
+        height: 33px;
+        background-color: white;
+        border: solid 1px #c0c0c0;
+        padding: 2px;
+        vertical-align: middle;
+    }
+
+input, .textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #d3d6db;
+    border-radius: 2px;
+    color: #222324;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 12px;
+    height: 28px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    line-height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+    vertical-align: top;
+    box-shadow: inset 0 1px 2px rgba(17, 17, 17, 0.1);
+    max-width: 100%;
+    width: 100%;
+}
+
+.input {
+    border-radius: 2px !important;
+    height: 28px !important;
+    box-shadow: none;
+}
+
+.select {
+    height: 28px !important;
+    vertical-align: middle !important;
+}
+
+.select-border {
+    border: 1px solid #d3d6db;
+    border-radius: 2px;
+}
+
+.body-heading {
+    border: 1px solid #d3d6db;
+    border-left: 10px solid rgb(0, 0, 255);
+    color: #222324;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 1px;
+    padding: 4px;
+}
+
+.body-border {
+    border: 1px solid #d3d6db;
+}
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #d3d6db;
+    border-radius: 2px;
+    color: #222324;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 12px;
+    height: 28px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    line-height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+    vertical-align: top;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.unselectable, .is-unselectable, .button, .delete, .modal-close, .tabs {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button {
+    border-radius: 2px !important;
+    height: 28px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+  
+.btndefault {
+    min-width: 80px;
+}
+
+.button.is-success {
+    background-color:rgba(42, 196, 30, 1);
+    border-color: transparent;
+    color: white;
+}

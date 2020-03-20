@@ -8,9 +8,14 @@ export class TextBox extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
+    componentDidMount(){
+      
+    }
     handleChange(event) {
         this.setState({value: event.target.value});
-        this.props.onElChange(event);
+        if(this.props.onElChange){
+            this.props.onElChange(event);
+        }
     }
 
     render() {
@@ -18,7 +23,7 @@ export class TextBox extends Component {
         return (
             <td style={{ width: this.props.model.displayWidth, textAlign: 'left', wordBreak: 'break-all', }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
-                    <input name={this.props.model.controlName} className="input" id={this.props.model.controlName} maxLength={this.props.model.maxLength}
+                    <input ref={this.props.model.inputRef} name={this.props.model.controlName} className="input" id={this.props.model.controlName} maxLength={this.props.model.maxLength}
                         style={{ width: this.props.model.boxWidth }} type="text" value={this.state.value} placeholder={charlimit}
                         onChange={this.handleChange}/>
                 </div>

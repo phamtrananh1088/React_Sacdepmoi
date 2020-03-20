@@ -2,6 +2,7 @@
 import { Header } from './control/editorTemplate/Header';
 import { TextBox } from './control/editorTemplate/TextBox';
 import { DropDownList } from './control/editorTemplate/DropDownList';
+import { ImageUpload } from './control/editorTemplate/ImageUpload';
 import { SelectDate } from './control/editorTemplate/SelectDate';
 export class MainForm extends Component {
     static displayName = MainForm.name;
@@ -26,6 +27,7 @@ export class MainForm extends Component {
             HEADELINE:"headline",
             LABEL:"label",
             FILEUPLOAD:"fileupload",
+            IMAGEUPLOAD:"imageupload",
         }
         let listL = [];
         let list = this.props.model.controls.filter((c)=> c.displayed==true)
@@ -54,6 +56,9 @@ export class MainForm extends Component {
                         break;
                     case partType.DROPDOWNLIST:
                         p.push(<DropDownList model={element} onElChange={this.handleElChange} />);
+                        break;
+                    case partType.IMAGEUPLOAD:
+                        p.push(<ImageUpload model={element} onElChange={this.handleElChange} />);
                         break;
                     case partType.SELECTDATE:
                         p.push(<SelectDate model={element} onElChange={this.handleElChange} />);

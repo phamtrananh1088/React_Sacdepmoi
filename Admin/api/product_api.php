@@ -36,7 +36,27 @@
 					$this->response(200, $products_arr);
 					$conn = null;	
 			}
-		}		
+		}
+		function get_eav_attribute(){
+			if ($this->method == 'GET'){	
+				$products_arr = array();			
+				try {
+						$database = new Database();	
+						$conn = $database->getConnection();
+						$sql = "SELECT * FROM eav_attribute where entity_type_id = 1";
+						$stmt = $conn->prepare($sql);
+						$stmt->execute();
+						while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+							$products_arr[] = $row;
+						}					
+					}
+					catch(PDOException $e) {
+						error_log("Error: " . $e->getMessage());
+					}	
+					$this->response(200, $products_arr);
+					$conn = null;	
+			}
+		}
 	}
 	$product_api = new product_api();
 ?>

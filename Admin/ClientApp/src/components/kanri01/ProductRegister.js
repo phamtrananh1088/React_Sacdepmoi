@@ -34,7 +34,7 @@ export class ProductRegister extends Component {
                 const element = this.state.eav_attribute[im];
                 data.controls.push({partType:'textbox', displayed:true,displayLine:im+1,displayLevel:1, headerDisplayed: true, displayItemName: element.attribute_code, displayItemNameWidth:130, required: true, controlName: element.attribute_code, displayWidth:470, boxWidth:440, maxLength: 100, inputValue: 'Hemohim', });
             }
-            data.controls.push({inputRef: (m) => this.inputRef = m,partType:'imageupload', displayed:true,displayLine:1,displayLevel:1, headerDisplayed: true, displayItemName: 'Image', displayItemNameWidth:130, required: true, controlName: 'image', displayWidth:470, boxWidth:440, inputValue: 'Hemohim', });
+            data.controls.push({inputRef: (m) => this.inputRef = m,partType:'imageupload', displayed:true,displayLine:5,displayLevel:1, headerDisplayed: true, displayItemName: 'Image', displayItemNameWidth:130, required: true, controlName: 'image', displayWidth:470, boxWidth:440, inputValue: 'Hemohim', });
             contents = <MainForm model={data} onElChange={this.handleElChange} />;
         }
         // data.controls.push({inputRef: (m) => this.inputRef = m,partType:'textbox', displayed:true,displayLine:1,displayLevel:1, headerDisplayed: true, displayItemName: 'Tên sản phẩm', displayItemNameWidth:130, required: true, controlName: 'productName', displayWidth:470, boxWidth:440, maxLength: 100, inputValue: 'Hemohim', });
